@@ -1,0 +1,10 @@
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 14' && doc.lang=='en'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+  	var hora=a.substring(11,13);
+        emit(hora,str);
+	}
+}
