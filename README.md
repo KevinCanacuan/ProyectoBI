@@ -19,7 +19,7 @@
 > * Conclusiones y trabajo futuro
 
 ### Adquisición de Datos
-> La Adquisición de Datos es realizada por medio de un script en lenguaje python que fue proporcionado en clase. Se coloca un link de un ejemplo, donde la ciudad analizada es Moscú - Rusia. Ejemplo:
+> La Adquisición de Datos es realizada por medio de un script en lenguaje python que fue proporcionado en clase. En el siguiente link se analiza la ciudad de Moscú - Rusia. Ejemplo:
 (https://github.com/KevinCanacuan/ProyectoBI/blob/master/rusia-moscu.py). Si se desea analizar cualquier otra ciudad o zona del planeta, se debe colocar las nuevas coordenadas (formato CSV) en la parte final del script. Además, se debe cambiar el nombre de la base de datos (couchDB) en donde se requiere guardar la información.
 
 ### Pre-procesamiento de Datos
@@ -42,15 +42,13 @@ EL funcionamiento es similar al script del análisis por horas, pero en este an�
 Para esto se utiliza el analizador de sentimientos de [textBlob](https://textblob.readthedocs.io/en/dev/). El cual determina la polaridad de un texto (" value " de la vista generada en couchDB). Y Los resultados serán mostrados en gráfico tipo pastel.
 
 ## V. CONCLUSIONES Y TRABAJO FUTURO
+Una vez analizados los resultados, se observa que el Mundial de Fútbol Rusia 2018 fue una gran atracción tanto para los asistentes al evento y los países participantes. Aunque la diferencia de la cantidad de tweets tomandos por país es muy notoria, se puede observar que la tendencia se mantiene para los países analizados (Bélgica, Inglaterra, Francia, Croacia, Rusia, Suecia).
 
-
-
-
-
+> Como trabajo futuro se plantea lo siguiente:
+> - 
 
 ## VI. APÉNDICE: Instrucciones de Instalación y Funcionamiento
-### HERRAMIENTAS
-* [Python 2.7](https://www.python.org/) - Lenguaje utilizado.
-* [ElasticSearch](https://www.elastic.co/) - Herramienta de Map - Reduce.
-* [Kibana](https://www.elastic.co/products/kibana) - Presentación de Gráficos.
-* Para poder acceder a Kibana, se ingresa a: [Kibana](http://localhost:9200) - Presentación de Gráficos.
+> El presente Proyecto no necesita de instalación previa para su funcionamiento, pero si requiere de cierto programas y herramientas para su funcionamiento:
+> - Base de Datos couchDB
+> - Navegador Web
+> - Librerias de python: json, textblob, emoji, matplotlib.pyplot
