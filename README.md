@@ -13,7 +13,7 @@
 > - Crear un clasificador de sentimiento en inglés utilizando datos extraídos de Twitter para minar opinión pública en los siguientes países: argentina, belgica, brasil, colombia, croacia, dinamarca, espania, francia, inglaterra, japon, mexico, panama, polonia, portugal, rusia, senegal, suecia, suiza, tunez, uruguay.
 > - Identificar y seleccionar las herramientas necesarias para procesar y analizar datos provenientes de Twitter.
 
-## IV. DESAROOLO DEL PROYECTO - FASES:
+## IV. DESARROLLO DEL PROYECTO - FASES:
 > * Adquisicion y Limpieza de Datos
 > * Análisis de Resultados
 > * Conclusiones y trabajo futuro
@@ -29,7 +29,7 @@
 > Después de obtener las vistas de las bases de datos, se procede a escoger únicamente los tweets que traten sobre el mundial, como se puede observar en la parte inicial del siguiente script(python):
 (https://github.com/KevinCanacuan/ProyectoBI/blob/master/Horas/Horas14JulioBelgica-Inglaterra.py)
 
-> Cada vista, de la base couchDB, es llamada a través de la función " vistas "; después se ingresan los patrones que se desean limpiar del texto como: direcciones web, links, caracteres especiales, emoticones y una función denominada " give_emoji_free_text ", que también ayuda a limpiar el texto. Además, se ingresan los " hashtags ", referentes al mundial, que también sirven como filtros.
+> Cada vista, de la base couchDB, es llamada a través de la función " vistas "; después se ingresan los patrones que se desean limpiar del texto como: direcciones web, links, caracteres especiales, emoticones y una función denominada " give_emoji_free_text / limpiarEmojis ", que también ayuda a limpiar el texto. Además, se ingresan los " hashtags ", referentes al mundial, que también sirven como filtros.
 
 Nota: En el script analizado se trabaja con 3 países a la vez, pero se podría trabajar con un país a la vez.
 
@@ -44,8 +44,13 @@ Para esto se utiliza el analizador de sentimientos de [textBlob](https://textblo
 ## V. CONCLUSIONES Y TRABAJO FUTURO
 > Una vez analizados los resultados, se observa que el Mundial de Fútbol Rusia 2018 fue una gran atracción tanto para los asistentes al evento y los países participantes. Aunque la diferencia de la cantidad de tweets tomandos por país es muy notoria, se puede observar que la tendencia se mantiene para los países analizados (Bélgica, Inglaterra, Francia, Croacia, Rusia, Suecia).
 
+> Por otro lado, en la carpeta [Imagenes](https://github.com/KevinCanacuan/ProyectoBI/tree/master/Imagenes) se encuentran capturas de los resultados de los distintos tipos de análisis realizados a los países antes mencionados.
+
 >  Como trabajo futuro se plantea lo siguiente:
-> - asdsad 
+> - Si el proyecto de asignatura sigue con el mismo tema, la toma de coordenas de las zonas para capturar los tweets deberían mejorarse, debido a que a veces se tomaba tweets de otro país cercano o de otras zonas.
+> - Analizar cuanto dinero gastaron los asistentes al mundial.
+> - Analizar el porcentaje de asistentes que no tengan a su selección en competición.
+> - Verificar que los demás grupos también tengan resultados similares a los obtenidos, para de cierta manera asegurarnos que el análisis presentado fue correcto.
 
 ## VI. APÉNDICE: Instrucciones de Instalación y Funcionamiento
 > El presente Proyecto no necesita de instalación previa para su funcionamiento, pero si requiere de cierto programas y herramientas para su funcionamiento:
