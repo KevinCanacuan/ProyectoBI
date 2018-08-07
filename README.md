@@ -43,6 +43,7 @@ Para esto se utiliza el analizador de sentimientos de [textBlob](https://textblo
 
 ## V. CONCLUSIONES Y TRABAJO FUTURO
 > Una vez analizados los resultados, se observa que el Mundial de Fútbol Rusia 2018 fue una gran atracción tanto para los asistentes al evento y los países participantes. Aunque la diferencia de la cantidad de tweets tomandos por país es muy notoria, se puede observar que la tendencia se mantiene para los países analizados (Bélgica, Inglaterra, Francia, Croacia, Rusia, Suecia).
+
 >  Como trabajo futuro se plantea lo siguiente:
 > - asdsad 
 
