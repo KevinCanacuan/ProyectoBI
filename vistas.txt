@@ -1,0 +1,146 @@
+
+
+///Sentimientos 14 Julio
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 14' && doc.lang=='en'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+  	var hora=a.substring(11,13);
+        emit(hora,str);
+	}
+}
+
+///Sentimientos 15 Julio
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 15' && doc.lang=='en'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+  	var hora=a.substring(11,13);
+        emit(hora,str);
+	}
+}
+
+///Sentimientos 7 Julio
+
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 07' && doc.lang=='en'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+  	var hora=a.substring(11,13);
+        emit(hora,str);
+	}
+}
+
+//Por Fecha
+
+
+function(doc) {
+  if(doc.lang=='en'){
+	var a=doc.created_at;
+  	var fecha=a.substring(4,10)
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+        emit(fecha,str);
+	}
+}
+//Por Idioma 14 Julio
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 14'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+        emit(doc.lang,str);
+	}
+}
+
+///Por Idioma 15 Julio
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 15'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+        emit(doc.lang,str);
+	}
+}
+
+//Por Idioma 7 Julio
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 07'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+        emit(doc.lang,str);
+	}
+}
+
+//Por Pais
+
+function(doc) {
+  var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+ 	emit(doc.place.country_code,str)
+}
+
+//Por Pais 14 Julio
+
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 14'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+        emit(doc.place.country_code,str);
+	}
+}
+
+//Por Pais 14 Julio Relacionados al mundial
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 14' && doc.lang=='en'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase();
+        emit(doc.place.country_code,str);
+	}
+}
+
+//Por Pais 15 Julio
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 15'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase()
+        emit(doc.place.country_code,str);
+	}
+}
+//Por Pais 15 Julio Relacionados al mundal
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 15' && doc.lang=='en'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        str = str.toUpperCase();
+        emit(doc.place.country_code,str);
+	}
+}
+
+//Mapa por partidos
+
+function(doc) {
+  var a=doc.created_at;
+  var fecha=a.substring(4,10)
+  if(fecha=='Jul 07' && doc.lang=='en'&& doc.coordinates!==null){
+        var str = doc.text.replace(/[^a-zA-Z 0-9]+/g,'');
+        emit(doc.coordinates.coordinates,str);
+	}
+}
