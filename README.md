@@ -42,10 +42,9 @@ EL funcionamiento es similar al script del análisis por horas, pero en este an�
 Para esto se utiliza el analizador de sentimientos de [textBlob](https://textblob.readthedocs.io/en/dev/). El cual determina la polaridad de un texto (" value " de la vista generada en couchDB). Y Los resultados serán mostrados en gráfico tipo pastel.
 
 ## V. CONCLUSIONES Y TRABAJO FUTURO
-Una vez analizados los resultados, se observa que el Mundial de Fútbol Rusia 2018 fue una gran atracción tanto para los asistentes al evento y los países participantes. Aunque la diferencia de la cantidad de tweets tomandos por país es muy notoria, se puede observar que la tendencia se mantiene para los países analizados (Bélgica, Inglaterra, Francia, Croacia, Rusia, Suecia).
-
-> Como trabajo futuro se plantea lo siguiente:
-> - 
+>> Una vez analizados los resultados, se observa que el Mundial de Fútbol Rusia 2018 fue una gran atracción tanto para los asistentes al evento y los países participantes. Aunque la diferencia de la cantidad de tweets tomandos por país es muy notoria, se puede observar que la tendencia se mantiene para los países analizados (Bélgica, Inglaterra, Francia, Croacia, Rusia, Suecia).
+>>  Como trabajo futuro se plantea lo siguiente:
+>> - asdsad 
 
 ## VI. APÉNDICE: Instrucciones de Instalación y Funcionamiento
 > El presente Proyecto no necesita de instalación previa para su funcionamiento, pero si requiere de cierto programas y herramientas para su funcionamiento:
